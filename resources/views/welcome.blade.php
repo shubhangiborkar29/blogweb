@@ -47,7 +47,7 @@
                         <div class="card-body">
                             <div class="small text-muted">{{$latest_blog->created_at}}</div>
                             <h2 class="card-title">{{$latest_blog->title}}</h2>
-                            <p class="card-text">{{$latest_blog->description}}</p>
+                            <p class="card-text">{!!$latest_blog->description!!}</p>
                             <a class="btn btn-primary" href="{{route('detail',$latest_blog->id)}}">Read more →</a>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                                 <div class="card-body">
                                     <div class="small text-muted">{{$d->created_at}}</div>
                                     <h2 class="card-title h4">{{$d->title}}</h2>
-                                    <p class="card-text">{{$d->description}}</p>
+                                    <p class="card-text">{!!$d->description!!}</p>
                                     <a class="btn btn-primary" href="{{route('detail',$latest_blog->id)}}">Read more →</a>
                                 </div>
                             </div>
